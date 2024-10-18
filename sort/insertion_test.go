@@ -10,6 +10,8 @@ func TestInsertion(t *testing.T) {
 	want := []int{0, 1, 2, 3, 4, 5}
 	
 	if ! reflect.DeepEqual(got, want) {
+		t.Log("Got: ", got)
+		t.Log("Want: ", want)
 		t.Fatalf("Array did not sorted propertly")
 	}
 }
